@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/open"
+        android:title="Open"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/save"
+        android:title="Save"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/saveAs"
+        android:title="Save As"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/undo"
+        android:title="Undo"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/redo"
+        android:title="Redo"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/changeTheme"
+        android:title="Change Theme"
+        app:showAsAction="never" />
+</menu>

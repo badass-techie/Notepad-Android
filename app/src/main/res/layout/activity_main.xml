@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:hint="@string/text_hint"
+        android:inputType="textMultiLine"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:autofillHints="" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabAlignmentMode="end"
+        app:fabAnimationMode="scale"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="30dp"
+        app:hideOnScroll="true"
+        app:menu="@menu/options"
+        app:titleTextColor="@color/colorForeground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_new_24dp"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_anchor="@id/bottomAppBar"
+        app:tint="@color/colorForeground" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
